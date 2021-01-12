@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@800&display=swap");
+* {
+  border: 1ps dotted yellow; }
+
+body {
+  margin: 0;
+  background-color: #0E0E0E;
+  color: #fff;
+  font-family: sans-serif; }
+  body .container {
+    height: 600px;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; }
+    body .container .center {
+      text-align: center; }
+      body .container .center #countdown {
+        font-size: 9rem;
+        color: #2ecc71; }
+      body .container .center #countup {
+        font-size: 3rem;
+        margin-top: -24px;
+        color: #521711; }
+      body .container .center .buttons {
+        display: flex;
+        justify-content: space-between;
+        cursor: pointer;
+        margin-top: 60px;
+        width: 100%;
+        font-size: 3rem;
+        color: #fff;
+        border: 0;
+        border-radius: 4px; }
+  body .blink {
+    animation: blinker 3s linear infinite; }
+  body .hide {
+    display: none; }
+
+@keyframes blinker {
+  50% {
+    opacity: 0; } }
+
+@media (min-width: 425px) {
+  body .container .center #countdown {
+    font-size: 10rem; } }
